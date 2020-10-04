@@ -50,11 +50,12 @@ font-family: 'Ubuntu', sans-serif; 400
 }
 
 .inner__block {
-	background: url('../images/bg_container.jpg');
+/* 	background: url('../images/bg_container.jpg'); */
 	/* background-size: 300px; */
    box-shadow: 20px 0 10px -10px hsla(0,0%,0%,.99),
 					-20px 0 10px -10px hsla(0,0%,0%,.99);
 	padding: 50px 40px 20px;
+	background-color: gray;
 }
 
 .top__block-title {
