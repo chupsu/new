@@ -4,7 +4,7 @@ $(document).ready(function(){
       dots:true,
       adaptiveHeight:true,
       slidesToShow:4,
-      initialSlide:5,
+      initialSlide:0,
       infinite:true,
       speed:500,
       easing:'ease',
@@ -23,5 +23,9 @@ $(document).ready(function(){
             }
          }
       ]
+   });
+   $('.header__burger').click(function(event) {
+      $('.header__burger,.header__menu').toggleClass('active');
+      $('body').toggleClass('lock');
    });
 });
