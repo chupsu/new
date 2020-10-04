@@ -55,7 +55,7 @@ font-family: 'Ubuntu', sans-serif; 400
    box-shadow: 20px 0 10px -10px hsla(0,0%,0%,.99),
 					-20px 0 10px -10px hsla(0,0%,0%,.99);
 	padding: 50px 40px 20px;
-	background-color: gray;
+	background-color: #432F1F;
 }
 
 .top__block-title {
