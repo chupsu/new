@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width">
+   <title>Building</title>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Ubuntu&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="css/normalize.css">
+   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+   <link rel="stylesheet" type="text/css" href="css/main.css">
+   <link rel="shortcut icon" href="logo.ico">
+</head>
+
+<body>
+   <header class="header">
+      <div class="container">
+         <div class="header__body">
+            <a class="header__logo" href="#">
+               <img class="logo" src="images/logo.png" alt="logo">
+            </a>
+            <div class="header__burger">
+               <span></span>
+            </div>
+            <nav class="header__menu">
+               <ul class="header__list">
+                  <li class="header__link">
+                     <a class="header__btn" href="index.html">Главная</a>
+                  </li>
+                  <li class="header__link">
+                     <a class="header__btn" href="services.html">Услуги</a>
+                  </li>
+                  <li class="header__link">
+                     <a class="header__btn" href="about.html">О нас</a>
+                  </li>
+                  <li class="header__link">
+                     <a class="header__btn" href="works.html">Галерея</a>
+                  </li>
+                  <li class="header__link">
+                     <a class="header__btn" href="reviews.html">Отзывы</a>
+                  </li>
+                  <li class="header__link">
+                     <a class="header__btn" href="contacts.html">Контакты</a>
+                  </li>
+               </ul>
+            </nav>
+            <div class="header__contacts">
+               <a class="header__tel" href="tel:88000000000">+7 (800) 000 00 00</a>
+               <a class="header__callback" href="#">Заказать звонок</a>
+            </div>
+         </div>
+      </div>
+   </header>
+   <section class="work__page page__mt">
+      <div class="container">
+         <div class="section__inner">
+            <h2 class="section__title">
+               &#8212; Наши работы
+            </h2>
+            <!-- <div class="categorya categoryb">A, B</div>
+            <div class="categorya">A</div>
+            <div class="categoryb">B</div> -->
+            <div class="works__filters">
+               <div class="filters__top">
+                  <h3 class="filters__title">
+                     Интересует что-то конкретное?
+                  </h3>
+                  <div class="checked__all">
+                     <input checked type="checkbox" onclick="checkedAll();" name="checkall" value="bath">
+                     <label class="filters__item-name" for="filter-bath">Снять\выделить все</label>
+                  </div>
+               </div>
+               <ul class="filters__items" id="filters">
+                  <li class="filters__item">
+                     <input checked type="checkbox" value="build" id="filter-build">
+                     <label class="filters__item-name" for="filter-build">Дома</label>
+                  </li>
+                  <li class="filters__item">
+                     <input checked type="checkbox" value="bath" id="filter-bath">
+                     <label class="filters__item-name" for="filter-bath">Бани</label>
+                  </li>
+                  <li class="filters__item">
+                     <input checked type="checkbox" value="garage" id="filter-garage">
+                     <label class="filters__item-name" for="filter-garage">Гаражи</label>
+                  </li>
+                  <li class="filters__item">
+                     <input checked type="checkbox" value="fence" id="filter-fence">
+                     <label class="filters__item-name" for="filter-fence">Заборы</label>
+                  </li>
+                  <li class="filters__item">
+                     <input checked type="checkbox" value="pavilion" id="filter-pavilion">
+                     <label class="filters__item-name" for="filter-pavilion">Беседки</label>
+                  </li>
+                  <li class="filters__item">
+                     <input checked type="checkbox" value="facing" id="filter-facing">
+                     <label class="filters__item-name" for="filter-facing">Обшивка</label>
+                  </li>
+                  <li class="filters__item">
+                     <input checked type="checkbox" value="furnace" id="filter-furnace">
+                     <label class="filters__item-name" for="filter-furnace">Печи и камины</label>
+                  </li>
+                  <li class="filters__item">
+                     <input checked type="checkbox" value="well" id="filter-well">
+                     <label class="filters__item-name" for="filter-well">Колодцы</label>
+                  </li>
+                  <li class="filters__item">
+                     <input checked type="checkbox" value="walk" id="filter-walk">
+                     <label class="filters__item-name" for="filter-walk">Тропинки</label>
+                  </li>
+               </ul>
+            </div>
+            <div class="works__inner">
+               <div class="work__item build">
+                  <a data-fancybox="gallery" href="images/full/work(01).jpg" class="work__link">
+                     <img src="images/tumbs/work(01).jpg" alt="work(01)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item bath">
+                  <a data-fancybox="gallery" href="images/full/work(02).jpg" class="work__link">
+                     <img src="images/tumbs/work(02).jpg" alt="work(02)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item garage">
+                  <a data-fancybox="gallery" href="images/full/work(03).jpg" class="work__link">
+                     <img src="images/tumbs/work(03).jpg" alt="work(03)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item fence">
+                  <a data-fancybox="gallery" href="images/full/work(04).jpg" class="work__link">
+                     <img src="images/tumbs/work(04).jpg" alt="work(04)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item pavilion">
+                  <a data-fancybox="gallery" href="images/full/work(05).jpg" class="work__link">
+                     <img src="images/tumbs/work(05).jpg" alt="work(05)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item facing">
+                  <a data-fancybox="gallery" href="images/full/work(06).jpg" class="work__link">
+                     <img src="images/tumbs/work(06).jpg" alt="work(06)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item well">
+                  <a data-fancybox="gallery" href="images/full/work(07).jpg" class="work__link">
+                     <img src="images/tumbs/work(07).jpg" alt="work(07)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item furnace">
+                  <a data-fancybox="gallery" href="images/full/work(08).jpg" class="work__link">
+                     <img src="images/tumbs/work(08).jpg" alt="work(08)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item build">
+                  <a data-fancybox="gallery" href="images/full/work(09).jpg" class="work__link">
+                     <img src="images/tumbs/work(09).jpg" alt="work(09)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item fence">
+                  <a data-fancybox="gallery" href="images/full/work(10).jpg" class="work__link">
+                     <img src="images/tumbs/work(10).jpg" alt="work(10)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item bath">
+                  <a data-fancybox="gallery" href="images/full/work(11).jpg" class="work__link">
+                     <img src="images/tumbs/work(11).jpg" alt="work(11)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item pavilion">
+                  <a data-fancybox="gallery" href="images/full/work(12).jpg" class="work__link">
+                     <img src="images/tumbs/work(12).jpg" alt="work(12)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item build">
+                  <a data-fancybox="gallery" href="images/full/work(13).jpg" class="work__link">
+                     <img src="images/tumbs/work(13).jpg" alt="work(13)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item garage">
+                  <a data-fancybox="gallery" href="images/full/work(14).jpg" class="work__link">
+                     <img src="images/tumbs/work(14).jpg" alt="work(14)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item facing">
+                  <a data-fancybox="gallery" href="images/full/work(15).jpg" class="work__link">
+                     <img src="images/tumbs/work(15).jpg" alt="work(15)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item well">
+                  <a href="images/full/work(16).jpg" class="work__link">
+                     <img src="images/tumbs/work(16).jpg" alt="work(16)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item furnace">
+                  <a href="images/full/work(17).jpg" class="work__link">
+                     <img src="images/tumbs/work(17).jpg" alt="work(17)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item walk">
+                  <a data-fancybox="gallery" href="images/full/work(18).jpg" class="work__link">
+                     <img src="images/tumbs/work(18).jpg" alt="work(18)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item fence">
+                  <a data-fancybox="gallery" href="images/full/work(19).jpg" class="work__link">
+                     <img src="images/tumbs/work(19).jpg" alt="work(19)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item pavilion">
+                  <a data-fancybox="gallery" href="images/full/work(20).jpg" class="work__link">
+                     <img src="images/tumbs/work(20).jpg" alt="work(20)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item bath">
+                  <a data-fancybox="gallery" href="images/full/work(21).jpg" class="work__link">
+                     <img src="images/tumbs/work(21).jpg" alt="work(21)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item facing">
+                  <a data-fancybox="gallery" href="images/full/work(22).jpg" class="work__link">
+                     <img src="images/tumbs/work(22).jpg" alt="work(22)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item well">
+                  <a data-fancybox="gallery" href="images/full/work(23).jpg" class="work__link">
+                     <img src="images/tumbs/work(23).jpg" alt="work(23)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item walk">
+                  <a data-fancybox="gallery" href="images/full/work(24).jpg" class="work__link">
+                     <img src="images/tumbs/work(24).jpg" alt="work(24)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item garage">
+                  <a data-fancybox="gallery" href="images/full/work(25).jpg" class="work__link">
+                     <img src="images/tumbs/work(25).jpg" alt="work(25)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item build">
+                  <a data-fancybox="gallery" href="images/full/work(26).jpg" class="work__link">
+                     <img src="images/tumbs/work(26).jpg" alt="work(26)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item pavilion">
+                  <a data-fancybox="gallery" href="images/full/work(27).jpg" class="work__link">
+                     <img src="images/tumbs/work(27).jpg" alt="work(27)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item furnace">
+                  <a data-fancybox="gallery" href="images/full/work(28).jpg" class="work__link">
+                     <img src="images/tumbs/work(28).jpg" alt="work(28)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item walk">
+                  <a data-fancybox="gallery" href="images/full/work(29).jpg" class="work__link">
+                     <img src="images/tumbs/work(29).jpg" alt="work(29)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item garage">
+                  <a data-fancybox="gallery" href="images/full/work(30).jpg" class="work__link">
+                     <img src="images/tumbs/work(30).jpg" alt="work(30)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item fence">
+                  <a data-fancybox="gallery" href="images/full/work(31).jpg" class="work__link">
+                     <img src="images/tumbs/work(31).jpg" alt="work(31)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item well">
+                  <a data-fancybox="gallery" href="images/full/work(32).jpg" class="work__link">
+                     <img src="images/tumbs/work(32).jpg" alt="work(32)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item furnace">
+                  <a data-fancybox="gallery" href="images/full/work(33).jpg" class="work__link">
+                     <img src="images/tumbs/work(33).jpg" alt="work(33)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item bath">
+                  <a data-fancybox="gallery" href="images/full/work(34).jpg" class="work__link">
+                     <img src="images/tumbs/work(34).jpg" alt="work(34)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item pavilion">
+                  <a data-fancybox="gallery" href="images/full/work(35).jpg" class="work__link">
+                     <img src="images/tumbs/work(35).jpg" alt="work(35)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item walk">
+                  <a data-fancybox="gallery" href="images/full/work(36).jpg" class="work__link">
+                     <img src="images/tumbs/work(36).jpg" alt="work(36)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item build">
+                  <a data-fancybox="gallery" href="images/full/work(37).jpg" class="work__link">
+                     <img src="images/tumbs/work(37).jpg" alt="work(37)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item facing">
+                  <a data-fancybox="gallery" href="images/full/work(38).jpg" class="work__link">
+                     <img src="images/tumbs/work(38).jpg" alt="work(38)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item garage">
+                  <a data-fancybox="gallery" href="images/full/work(39).jpg" class="work__link">
+                     <img src="images/tumbs/work(39).jpg" alt="work(39)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item well">
+                  <a data-fancybox="gallery" href="images/full/work(40).jpg" class="work__link">
+                     <img src="images/tumbs/work(40).jpg" alt="work(40)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item furnace">
+                  <a data-fancybox="gallery" href="images/full/work(41).jpg" class="work__link">
+                     <img src="images/tumbs/work(41).jpg" alt="work(41)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item fence">
+                  <a data-fancybox="gallery" href="images/full/work(42).jpg" class="work__link">
+                     <img src="images/tumbs/work(42).jpg" alt="work(42)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item walk">
+                  <a data-fancybox="gallery" href="images/full/work(43).jpg" class="work__link">
+                     <img src="images/tumbs/work(43).jpg" alt="work(43)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item furnace">
+                  <a data-fancybox="gallery" href="images/full/work(44).jpg" class="work__link">
+                     <img src="images/tumbs/work(44).jpg" alt="work(44)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item facing">
+                  <a data-fancybox="gallery" href="images/full/work(45).jpg" class="work__link">
+                     <img src="images/tumbs/work(45).jpg" alt="work(45)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item bath">
+                  <a data-fancybox="gallery" href="images/full/work(46).jpg" class="work__link">
+                     <img src="images/tumbs/work(46).jpg" alt="work(46)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item pavilion">
+                  <a data-fancybox="gallery" href="images/full/work(47).jpg" class="work__link">
+                     <img src="images/tumbs/work(47).jpg" alt="work(47)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+               <div class="work__item garage">
+                  <a data-fancybox="gallery" href="images/full/work(48).jpg" class="work__link">
+                     <img src="images/tumbs/work(48).jpg" alt="work(48)" class="work__img">
+                  </a>
+                  <span class="work__adress">
+                     Адрес работы
+                  </span>
+                  <span class="work__name">
+                     Тип\Название работы
+                  </span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <script src="js/jquery-3.5.1.min.js"></script>
+   <script src="js/jquery.fancybox.min.js"></script>
+   <script src="js/slick.min.js"></script>
+   <script src="js/script.js"></script>
+</body>
+
+</html>
