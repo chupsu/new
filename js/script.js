@@ -1,7 +1,7 @@
 $(document).ready(function(){
    $('.work__slider').slick({
       arrows:true,
-      dots:true,
+      dots:false,
       adaptiveHeight:true,
       slidesToShow:4,
       initialSlide:0,
@@ -34,13 +34,14 @@ $(document).ready(function(){
       arrows:false,
       dots:false,
       adaptiveHeight:true,
-      slidesToShow:4,
+      slidesToShow:3,
       initialSlide:0,
       infinite:true,
       speed:500,
       easing:'ease',
       waitForAnimate:false,
-      // centerMode:true,
+      centerMode:true,
+      centerPadding: '60px',
       responsive:[
          {
             breakpoint: 950,
@@ -95,13 +96,7 @@ $(document).ready(function(){
           else $(this).show();
           
       });
-  
   });
-// $(".tabs__block1").not(":first").hide();
-// $(".tabs__block .tabs__item").click(function() {
-   // $(".tabs__block .tabs__item").removeClass("active").eq($(this).index()).addClass("active");
-   // $(".tabs__block1").hide().eq($(this).index()).fadeIn()
-// }).eq(0).addClass("active");
 });
 function openTab(evt, openTab, subTab) {
    var i, tabcontent, tablinks;
@@ -121,17 +116,4 @@ function openTab(evt, openTab, subTab) {
    }
    document.getElementById(openTab).style.display = "block";
    evt.currentTarget.className += " active";
-}
-checked=false;
-function checkedAll (frm1) {
-	var aa= document.getElementById('frm1');
-	 if (checked == false){
-           checked = true
-          }
-        else{
-          checked = false
-          }
-	for (var i =0; i < aa.elements.length; i++){
-	 aa.elements[i].checked = checked;
-	}
 }

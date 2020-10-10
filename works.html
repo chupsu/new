@@ -66,47 +66,60 @@
                   <h3 class="filters__title">
                      Интересует что-то конкретное?
                   </h3>
-                  <div class="checked__all">
-                     <input checked type="checkbox" onclick="checkedAll();" name="checkall" value="bath">
-                     <label class="filters__item-name" for="filter-bath">Снять\выделить все</label>
-                  </div>
+                  <label class="checked__all" for="checkall">
+                     <input class="checked__all" checked type="checkbox" onclick="checkAll(this)" id="checkall" name="cb_all" value="all">
+                     Снять\выделить все
+                  </label>
                </div>
                <ul class="filters__items" id="filters">
                   <li class="filters__item">
-                     <input checked type="checkbox" value="build" id="filter-build">
-                     <label class="filters__item-name" for="filter-build">Дома</label>
+                     <label class="filters__item-name" for="filter-build">
+                        <input class="filters__check" checked type="checkbox" name="cb" value="build" id="filter-build">Дома
+                     </label>
                   </li>
                   <li class="filters__item">
-                     <input checked type="checkbox" value="bath" id="filter-bath">
-                     <label class="filters__item-name" for="filter-bath">Бани</label>
+                     <label class="filters__item-name" for="filter-bath">
+                        <input class="filters__check" checked type="checkbox" name="cb" value="bath" id="filter-bath">Бани
+                     </label>
                   </li>
                   <li class="filters__item">
-                     <input checked type="checkbox" value="garage" id="filter-garage">
-                     <label class="filters__item-name" for="filter-garage">Гаражи</label>
+                     <label class="filters__item-name" for="filter-garage">
+                        <input class="filters__check" checked type="checkbox" name="cb" value="garage"
+                           id="filter-garage">Гаражи
+                     </label>
                   </li>
                   <li class="filters__item">
-                     <input checked type="checkbox" value="fence" id="filter-fence">
-                     <label class="filters__item-name" for="filter-fence">Заборы</label>
+                     <label class="filters__item-name" for="filter-fence">
+                        <input class="filters__check" checked type="checkbox" name="cb" value="fence" id="filter-fence">Заборы
+                     </label>
                   </li>
                   <li class="filters__item">
-                     <input checked type="checkbox" value="pavilion" id="filter-pavilion">
-                     <label class="filters__item-name" for="filter-pavilion">Беседки</label>
+                     <label class="filters__item-name" for="filter-pavilion">
+                        <input class="filters__check" checked type="checkbox" name="cb" value="pavilion"
+                           id="filter-pavilion">Беседки
+                     </label>
                   </li>
                   <li class="filters__item">
-                     <input checked type="checkbox" value="facing" id="filter-facing">
-                     <label class="filters__item-name" for="filter-facing">Обшивка</label>
+                     <label class="filters__item-name" for="filter-facing">
+                        <input class="filters__check" checked type="checkbox" name="cb" value="facing"
+                           id="filter-facing">Обшивка
+                     </label>
                   </li>
                   <li class="filters__item">
-                     <input checked type="checkbox" value="furnace" id="filter-furnace">
-                     <label class="filters__item-name" for="filter-furnace">Печи и камины</label>
+                     <label class="filters__item-name" for="filter-furnace">
+                        <input class="filters__check" checked type="checkbox" name="cb" value="furnace"
+                           id="filter-furnace">Печи и камины
+                     </label>
                   </li>
                   <li class="filters__item">
-                     <input checked type="checkbox" value="well" id="filter-well">
-                     <label class="filters__item-name" for="filter-well">Колодцы</label>
+                     <label class="filters__item-name" for="filter-well">
+                        <input class="filters__check" checked type="checkbox" name="cb" value="well" id="filter-well">Колодцы
+                     </label>
                   </li>
                   <li class="filters__item">
-                     <input checked type="checkbox" value="walk" id="filter-walk">
-                     <label class="filters__item-name" for="filter-walk">Тропинки</label>
+                     <label class="filters__item-name" for="filter-walk">
+                        <input class="filters__check" checked type="checkbox" name="cb" value="walk" id="filter-walk">Тропинки
+                     </label>
                   </li>
                </ul>
             </div>
