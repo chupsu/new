@@ -9,7 +9,39 @@ $(document).ready(function(){
       speed:500,
       easing:'ease',
       waitForAnimate:false,
-      // centerMode:true,
+      responsive:[
+         {
+            breakpoint: 950,
+            settings: {
+               slidesToShow:3,
+            }
+         },{
+            breakpoint: 720,
+            settings: {
+               slidesToShow:2,
+               dots:false,
+            }
+         },{
+            breakpoint: 480,
+            settings: {
+               slidesToShow:1,
+            }
+         }
+      ]
+   });
+   $('.services__slider').slick({
+      arrows:false,
+      dots:true,
+      adaptiveHeight:true,
+      slidesToShow:2,
+      initialSlide:0,
+      infinite:true,
+      speed:500,
+      easing:'ease',
+      waitForAnimate:false,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      pauseOnDotsHover: true,
       responsive:[
          {
             breakpoint: 950,
@@ -42,6 +74,8 @@ $(document).ready(function(){
       waitForAnimate:false,
       centerMode:true,
       centerPadding: '60px',
+      autoplay: true,
+      autoplaySpeed: 2000,
       responsive:[
          {
             breakpoint: 950,
@@ -69,12 +103,9 @@ $(document).ready(function(){
    $('.spoiler__title').click(function(event) {
       if($('.tabcontent').hasClass('one__spoiler')){
          $('.spoiler__title').not($(this)).removeClass('active');
-         $('.spoiler__text').not($(this).next()).slideUp(300);
+         $('.spoiler-box').not($(this).next()).slideUp(300);
       }
       $(this).toggleClass('active').next().slideToggle(300);
-   });
-   $('[data-fancybox]').fancybox({
-      protect: true
    });
    $('input').click(function() {
       var category = $(this).val();
@@ -98,6 +129,9 @@ $(document).ready(function(){
       });
   });
 });
+   $('[data-fancybox]').fancybox({
+      protect: true
+   });
 function openTab(evt, openTab, subTab) {
    var i, tabcontent, tablinks;
    tabcontent = document.getElementsByClassName("tabcontent");
