@@ -1,34 +1,523 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>less-1</title>
-  <link rel="stylesheet" href="css/main.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Building</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Ubuntu&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="shortcut icon" href="logo.ico">
 </head>
+
 <body>
-  <section class="page">
-    <h1 class="page__title">
-      Зверев Антон
-    </h1>
-    <h3 class="page__subtitle">
-      Ученик курса «от 0 до 1»
-    </h3>
-    <div class="page__about">
-      <div class="about">
-        <p class="about__text">
-          Привет! Меня зовут Антон, мне 29 лет. Провожу очень много времени за компьютером, <span class="about__text-1">очень</span>, <span class="about__text-2">много</span>. Начал изучать верстку в конце августа и очень этому рад. До этого ничего о ней не знал, но когда к тебе подходят со словами: «ну ты же много времени за компом, шаришь, сделай мне сайт», думаю - отказать невозможно!
-        </p>
-        <p class="about__text">
-          Начал изучение так, как это модно в наше время: не с Гугла, а с Ютуба! Нашел пару-тройку каналов близких по духу подачи и тут понеслось. К концу сентября уже точно понял что хочу на какой-то курс, где будет мотивация и пинок именно делать, а не «ну сейчас еще пару видео и в ленте чуть мемасиков». Очень понравилась ваша подача материала с шутками и подколами.
-        </p>
-        <p class="about__text">
-          Приложу все силы чтобы профессия верстальщика компенсировала жизнь в маленьком городке. Так же хочется найти друзей и единомышленников. 
-        </p>
-        <a class="about__link" href="https://vk.com/id14007277" target="_blank">Моя страница ВК</a>
-      </div>
-      <img class="page__photo" src="images/photo.jpg" alt="Фото">
-    </div>
-  </section>
+	<header class="header">
+		<div class="container">
+			<div class="header__body">
+				<a class="header__logo" href="#">
+					<img class="logo" src="images/sys/logo.png" alt="logo">
+				</a>
+				<div class="header__burger">
+					<span></span>
+				</div>
+				<nav class="header__menu">
+					<ul class="header__list">
+						<li class="header__link">
+							<a class="header__btn" href="index.html">Главная</a>
+						</li>
+						<li class="header__link">
+							<a class="header__btn" href="services.html">Услуги</a>
+						</li>
+						<li class="header__link">
+							<a class="header__btn" href="about.html">О нас</a>
+						</li>
+						<li class="header__link">
+							<a class="header__btn" href="works.html">Галерея</a>
+						</li>
+						<li class="header__link">
+							<a class="header__btn" href="reviews.html">Отзывы</a>
+						</li>
+						<li class="header__link">
+							<a class="header__btn" href="contacts.html">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__contacts">
+					<a class="header__tel" href="tel:88000000000">+7 (800) 000 00 00</a>
+					<a class="header__callback" href="#">Заказать звонок</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="offer" style="background-image: url('images/bg_offer.jpg');">
+		<div class="container">
+			<div class="offer__inner">
+				<div class="offer__body">
+					<h1 class="offer__title">
+						Строим для вас
+					</h1>
+					<p class="offer__text">
+						Построим для вас задачу любой сложности <br>
+						От возведения с нуля до мелких правок <br>
+						Быстрый старт, минимальные сроки
+					</p>
+					<a class="btn offer__btn" href="services.html">Начать строить</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="services">
+		<div class="container">
+			<div class="section__inner">
+				<h2 class="section__title">
+					&#8212; Наши услуги
+				</h2>
+				<div class="services__cards">
+					<div class="card">
+						<div class="card__front" data-text="Строительство">
+							<img class="card__front-img" src="images/card1.jpg" alt="Building">
+						</div>
+						<div class="card__back">
+							<div class="card__content">
+								<h3 class="card__content-title">
+									Строим:
+								</h3>
+								<ul class="card__content-items">
+									<li class="card__content-item">
+										<img class="card__content-img" src="images/card1_1.jpg" alt="House">Дома
+									</li>
+									<li class="card__content-item">
+										<img class="card__content-img" src="images/card1_2.jpg" alt="Bath">Бани
+									</li>
+									<li class="card__content-item">
+										<img class="card__content-img" src="images/card1_3.jpg" alt="Garage">Гаражи
+									</li>
+									<li class="card__content-item">
+										<img class="card__content-img" src="images/card1_4.jpg" alt="Fence">Заборы
+									</li>
+									<li class="card__content-item">
+										<img class="card__content-img" src="images/card1_5.jpg" alt="Pavilion">Беседки
+									</li>
+								</ul>
+								<a class="btn card__btn" href="services.html">Подробнее</a>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card__front" data-text="Отделка">
+							<img class="card__front-img" src="images/card2.jpg" alt="Facing">
+						</div>
+						<div class="card__back">
+							<div class="card__content">
+								<h3 class="card__content-title">
+									Снаружи и внутри:
+								</h3>
+								<ul class="card__content-items">
+									<li class="card__content-item large__name">
+										<img class="card__content-img" src="images/card2_1.jpg" alt="Panel">Фиброцементные панели
+									</li>
+									<li class="card__content-item">
+										<img class="card__content-img" src="images/card2_2.jpg" alt="Waterproofing">Гидроизоляция
+									</li>
+									<li class="card__content-item">
+										<img class="card__content-img" src="images/card2_3.jpg" alt="Insulation">Утепление
+									</li>
+									<li class="card__content-item">
+										<img class="card__content-img" src="images/card2_4.jpg" alt="Roof">Кровля
+									</li>
+									<li class="card__content-item">
+										<img class="card__content-img" src="images/card2_5.jpg" alt="Covering">Обшивка
+									</li>
+								</ul>
+								<a class="btn card__btn" href="services.html">Подробнее</a>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card__front" data-text="Прочее">
+							<img class="card__front-img" src="images/card3.jpg" alt="Other">
+						</div>
+						<div class="card__back">
+							<div class="card__content">
+								<h3 class="card__content-title">
+									А так же:
+								</h3>
+								<ul class="card__content-items">
+									<li class="card__content-item">
+										<img class="card__content-img" src="images/card3_1.jpg" alt="Fireplace">Камины
+									</li>
+									<li class="card__content-item">
+										<img class="card__content-img" src="images/card3_2.jpg" alt="Tile">Плитка
+									</li>
+									<li class="card__content-item">
+										<img class="card__content-img" src="images/card3_5.png" alt="Stairs">Лестницы
+									<li>
+									<li class="card__content-item">
+										<img class="card__content-img" src="images/card3_3.jpg" alt="Raising">Подъем дома
+									</li>
+									<li class="card__content-item">
+										<img class="card__content-img" src="images/card3_4.jpg" alt="Well">Колодцы
+									</li>
+								</ul>
+								<a class="btn card__btn" href="services.html">Подробнее</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="about">
+		<div class="container about__inner">
+			<div class="section__inner">
+				<h2 class="section__title">
+					&#8212; Давайте познакомимся
+				</h2>
+				<div class="bottom__block">
+					<div class="about__left">
+						<p class="about__text">
+							Мы - современная перспективная фирма с широким спектром услуг, эффективными и современными
+							технологиями строительства и довольными заказчиками. Поможем вам сэкономить на постройке дома и не
+							потерять в качестве! Работаем в сложных условиях, выполняем большие объемы работ, соблюдаем сроки.
+							Наши опытные сотрудники готовы помочь вам решить сложные задачи, связанные со строительством. Мы
+							работаем на результат! Мы создаём будущее!
+						</p>
+						<a class="link about__link" href="about.html">Подробнее <span>&#8594;</span></a>
+					</div>
+					<div class="about__right">
+						<div class="about__item">
+							<img class="about__item-img" src="images/sys/order.png" alt="order">
+							<p class="about__item-text">
+								Закажем материалы за вас
+							</p>
+						</div>
+						<div class="about__item">
+							<img class="about__item-img" src="images/sys/time.png" alt="time">
+							<p class="about__item-text">
+								Строим в указанные сроки
+							</p>
+						</div>
+						<div class="about__item">
+							<img class="about__item-img" src="images/sys/ask.png" alt="ask">
+							<p class="about__item-text">
+								Поможем с выбором
+							</p>
+						</div>
+						<div class="about__item">
+							<img class="about__item-img" src="images/sys/repair.png" alt="repair">
+							<p class="about__item-text">
+								Гарантируем правки в первые три месяца
+							</p>
+						</div>
+						<div class="about__item">
+							<img class="about__item-img" src="images/sys/money.png" alt="ask">
+							<p class="about__item-text">
+								Оплата работ по факту
+							</p>
+						</div>
+						<div class="about__item">
+							<img class="about__item-img" src="images/sys/answer.png" alt="repair">
+							<p class="about__item-text">
+								Регулярный отчет процесса
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="works">
+		<div class="container">
+			<div class="section__inner">
+				<h2 class="section__title">
+					&#8212; Выполненные работы
+				</h2>
+				<div class="works">
+					<div class="work__slider">
+						<div class="slider__item">
+							<a class="slider__img-link" data-fancybox="gallery" href="images/work1.jpg">
+								<img class="slider__img" src="images/work1.jpg" alt="work">
+							</a>
+						</div>
+						<div class="slider__item">
+							<a class="slider__img-link" data-fancybox="gallery" href="images/work2.jpg">
+								<img class="slider__img" src="images/work2.jpg" alt="work">
+							</a>
+						</div>
+						<div class="slider__item">
+							<a class="slider__img-link" data-fancybox="gallery" href="images/work3.jpg">
+								<img class="slider__img" src="images/work3.jpg" alt="work">
+							</a>
+						</div>
+						<div class="slider__item">
+							<a class="slider__img-link" data-fancybox="gallery" href="images/work4.jpg">
+								<img class="slider__img" src="images/work4.jpg" alt="work">
+							</a>
+						</div>
+						<div class="slider__item">
+							<a class="slider__img-link" data-fancybox="gallery" href="images/work5.jpg">
+								<img class="slider__img" src="images/work5.jpg" alt="work">
+							</a>
+						</div>
+						<div class="slider__item">
+							<a class="slider__img-link" data-fancybox="gallery" href="images/work6.jpg">
+								<img class="slider__img" src="images/work6.jpg" alt="work">
+							</a>
+						</div>
+						<div class="slider__item">
+							<a class="slider__img-link" data-fancybox="gallery" href="images/work1.jpg">
+								<img class="slider__img" src="images/work1.jpg" alt="work">
+							</a>
+						</div>
+						<div class="slider__item">
+							<a class="slider__img-link" data-fancybox="gallery" href="images/work2.jpg">
+								<img class="slider__img" src="images/work2.jpg" alt="work">
+							</a>
+						</div>
+						<div class="slider__item">
+							<a class="slider__img-link" data-fancybox="gallery" href="images/work3.jpg">
+								<img class="slider__img" src="images/work3.jpg" alt="work">
+							</a>
+						</div>
+						<div class="slider__item">
+							<a class="slider__img-link" data-fancybox="gallery" href="images/work4.jpg">
+								<img class="slider__img" src="images/work4.jpg" alt="work">
+							</a>
+						</div>
+						<div class="slider__item">
+							<a class="slider__img-link" data-fancybox="gallery" href="images/work5.jpg">
+								<img class="slider__img" src="images/work5.jpg" alt="work">
+							</a>
+						</div>
+						<div class="slider__item">
+							<a class="slider__img-link" data-fancybox="gallery" href="images/work6.jpg">
+								<img class="slider__img" src="images/work6.jpg" alt="work">
+							</a>
+						</div>
+					</div>
+				</div>
+				<a class="link sub__link" href="works.html" style="display: flex; justify-content: space-around; margin-top: 10px;">Посмотреть все работы</a>
+			</div>
+		</div>
+	</section>
+	<section class="works">
+		<div class="container">
+			<div class="section__inner">
+				<div style="display: flex; align-items:flex-end; justify-content: space-between;">
+				<h2 class="section__title">
+					&#8212; Отзывы
+				</h2>
+				<a class="link sub__link" href="reviews.html">Посмотреть все отзывы</a></div>
+				<div class="reviews__block reviews__slider">
+					<div class="reviews__item">
+						<div class="rt">
+							<img class="reviews__img" src="images/sys/man.png" alt="">
+							<div>
+								<span class="reviews__name">
+									Андрей Кирилович
+								</span>
+								<span class="reviews__adress">
+									Сергиев Посад
+								</span>
+							</div>
+						</div>
+						<p class="reviews__text">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum nostrum aliquid, rem quos amet totam
+							perferendis perspiciatis qui labore ipsam! Ea ullam modi porro suscipit aspernatur at enim
+							voluptatum accusamus.
+						</p>
+					</div>
+					<div class="reviews__item">
+						<div class="rt">
+							<img class="reviews__img" src="images/sys/woman.png" alt="">
+							<div>
+								<span class="reviews__name">
+									Виктория Павловна
+								</span>
+								<span class="reviews__adress">
+									Лугичи
+								</span>
+							</div>
+						</div>
+						<p class="reviews__text">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum nostrum aliquid, rem quos amet totam
+							perferendis perspiciatis qui labore ipsam! Ea ullam modi porro suscipit aspernatur at enim
+							voluptatum accusamus.
+						</p>
+					</div>
+					<div class="reviews__item">
+						<div class="rt">
+							<img class="reviews__img" src="images/sys/man.png" alt="">
+							<div>
+								<span class="reviews__name">
+									Олег
+								</span>
+								<span class="reviews__adress">
+									Мошенское
+								</span>
+							</div>
+						</div>
+						<p class="reviews__text">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum nostrum aliquid, rem quos amet totam
+							perferendis perspiciatis qui labore ipsam! Ea ullam modi porro suscipit aspernatur at enim
+							voluptatum accusamus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum nostrum
+							aliquid, rem quos amet totam perferendis perspiciatis qui labore ipsam! Ea ullam modi porro
+							suscipit aspernatur at enim voluptatum accusamus.
+						</p>
+					</div>
+					<div class="reviews__item">
+						<div class="rt">
+							<img class="reviews__img" src="images/sys/woman.png" alt="">
+							<div>
+								<span class="reviews__name">
+									Александра Векс
+								</span>
+								<span class="reviews__adress">
+									Москва
+								</span>
+							</div>
+						</div>
+						<p class="reviews__text">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum nostrum aliquid, rem quos amet totam
+							perferendis perspiciatis qui labore ipsam! Ea ullam modi porro suscipit aspernatur at enim
+							voluptatum accusamus.
+						</p>
+					</div>
+					<div class="reviews__item">
+						<div class="rt">
+							<img class="reviews__img" src="images/sys/man.png" alt="">
+							<div>
+								<span class="reviews__name">
+									Константин Сергеевич
+								</span>
+								<span class="reviews__adress">
+									Днепр
+								</span>
+							</div>
+						</div>
+						<p class="reviews__text">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum nostrum aliquid, rem quos amet totam
+							perferendis perspiciatis qui labore ipsam! Ea ullam modi porro suscipit aspernatur at enim
+							voluptatum accusamus.
+						</p>
+					</div>
+					<div class="reviews__item">
+						<div class="rt">
+							<img class="reviews__img" src="images/sys/woman.png" alt="">
+							<div>
+								<span class="reviews__name">
+									Алла Викторовна
+								</span>
+								<span class="reviews__adress">
+									Ростов-на-Дону
+								</span>
+							</div>
+						</div>
+						<p class="reviews__text">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum nostrum aliquid, rem quos amet totam
+							perferendis perspiciatis qui labore ipsam! Ea ullam modi porro suscipit aspernatur at enim
+							voluptatum accusamus.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <section class="contacts">
+		<div class="container">
+			<div class="contacts__inner">
+				<div class="qwe">
+					<h2 class="contacts__title">
+						&#8212; Контакты
+					</h2>
+					<div class="contacts__inn">
+						<div class="or-lf">
+							<h3 class="form__title">
+								Напишите нам
+							</h3>
+							<form class="order__form" action="#" method="get">
+								<div class="or-t">
+									<label class="contacts__suptitle">Как к вам обращаться?
+										<input class="form__contacts" type="text" name="name" placeholder="Ваше имя" required>
+									</label>
+									<label class="contacts__suptitle">Ваши контактные данные
+										<input class="form__contacts" type="email" name="email" placeholder="Ваш e-mail" required>
+									</label>
+								</div>
+								<label class="text__suptitle">Чем мы можем вам помочь?
+									<textarea class="form__text" name="text" placeholder="Ваше сообщение"></textarea>
+								</label>
+								<button class="btn order__btn" type="submit">
+									Отправить форму
+								</button>
+							</form>
+						</div>
+						<div class="contacts__info">
+							<h3>
+								Наши контакты
+							</h3>
+							<strong>Адрес</strong>
+							<ul class="con-t">
+								<li>Новгородская обл.</li>
+								<li>ИНН 7183610003019</li>
+								<li>БИК 4973163</li>
+								<li>Lorem, ipsum dolor.</li>
+								<li>Lorem, ipsum.</li>
+							</ul>
+							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__left">
+					<p class="footer__subtite">Строительная фирма ООО "Название"</p><br>
+					<p class="left-text">&#169; 2019-2021 Все права защищены</p>
+				</div>
+				<div class="footer__center">
+					<h4 class="footer__subtitle">
+						Полезные ссылки:
+					</h4>
+					<div class="qqq">
+						<a class="socials" title="Vkontakte" href="https://vk.com" target="_blank">
+							<img class="socials__img" src="images/sys/vk.svg" alt="Vkontakte" class="socials__img">
+						</a>
+						<a class="socials" title="Instagram" href="https://www.instagram.com" target="_blank">
+							<img class="socials__img" src="images/sys/instagram.svg" alt="Instagram" class="socials__img">
+						</a>
+						<a class="socials" title="Telegram" href="tg://resolve?domain=nikname">
+							<img class="socials__img" src="images/sys/telegram.svg" alt="Telegram">
+						</a>
+						<a class="socials mes-w" title="WhatsApp" href="https://wa.me/78000000000" target="_blank">
+							<img class="socials__img" src="images/sys/whatsapp.svg" alt="Whatsapp">
+						</a>
+						<a class="socials mes-v" title="Viber" href="viber://chat?number=+78000000000">
+							<img class="socials__img" src="images/sys/viber.svg" alt="Viber">
+						</a>
+					</div>
+				</div>
+				<div class="footer__right">
+					<h4 class="footer__subtitle">
+						Наши контакты:
+					</h4>
+					<a class="footer__tel" href="tel:88000000000">+7 (800) 000 00 00</a>
+					<a class="footer__mail" href="mailto:build@gmail.com">build@gmail.com</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
+
 </html>
