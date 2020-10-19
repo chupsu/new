@@ -1,0 +1,68 @@
+body {
+  font-family: sans-serif;
+  padding: 0;
+}
+h1, h3, p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.page {
+  width: 1300px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.page__title {
+  text-align: center;
+  font-size: 60px;
+}
+.page__subtitle {
+  text-align: center;
+  margin-top: 10px;
+}
+.page__about {
+  display: flex;
+  padding: 20px 0;
+}
+.about {
+  flex: 0 1 63%;
+  padding: 20px 40px 20px 0;
+}
+.about__text {
+  font-style: italic;
+  text-align: justify;
+  font-weight: 700;
+  line-height: 28px;
+  text-indent: 40px;
+  font-size: 24px;
+  padding: 10px;
+}
+.about__text-1 {
+  font-size: 27px;
+}
+.about__text-2 {
+  text-transform: uppercase;
+}
+.about__link {
+  display: block;
+  text-align: center;
+  color: blue;
+  margin-top: 20px;
+  transition: all 0.4s ease 0s;
+}
+.about__link:hover {
+  color: rgb(0, 183, 255);
+  transition: all 0.4s ease 0s;
+}
+.page__photo {
+  display: block;
+  width: 33%;
+  cursor: zoom-in;
+  object-fit: contain;
+  transition: all 0.4s ease 0s;
+}
+.page__photo:hover {
+  transform: scale(1.2);
+  transition: all 0.4s ease 0s;
+}
