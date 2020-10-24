@@ -817,7 +817,7 @@ button {
   height: 40px;
   border-radius: 50%;
   background-color: #fff;
-  object-fit: content;
+  object-fit: contain;
   margin-right: 10px;
 }
 .review-box__user-name, 
